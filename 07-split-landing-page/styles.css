@@ -98,13 +98,6 @@ h1 {
     background-color: var(--right-bg-color);
 }
 
-.split.right, 
-.split.left, 
-.split.right::before, 
-.split.left::before {
-    transition: all var(--speed) ease;
-}
-
 .split.right::before {
     content: '';
     position: absolute;
@@ -112,6 +105,15 @@ h1 {
     height: 100%;
     background-color: var(--right-bg-color);
 }
+
+.split.right, 
+.split.left, 
+.split.right::before, 
+.split.left::before {
+    transition: all var(--speed) ease;
+}
+
+
 
 .hover-left .left {
     width: var(--hover-width);
